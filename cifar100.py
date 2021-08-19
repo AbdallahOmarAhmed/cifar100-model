@@ -4,6 +4,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from data_loader import cifar100DataSet, cifar100TestSet
 
+ver = '1.1' 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
@@ -11,6 +12,7 @@ print(device)
 num_epochs = 100
 learning_rate = 0.001
 batch_size = 1000
+
 
 # data loader
 train_data = cifar100DataSet()
