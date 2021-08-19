@@ -12,6 +12,8 @@ torchvision : https://pypi.org/project/torchvision/
 
 GPU : Any GPU that is work with PyTorch 
 
+DataSet : You should download the cifar100 dataset : https://www.cs.toronto.edu/~kriz/cifar.html
+
 # Model
 * Hayper parametars
     
