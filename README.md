@@ -6,6 +6,8 @@ Ubuntu      " It's only tested on Ubuntu, so it may not work on Windows "
 
 Python3 : https://www.python.org/downloads/
 
+numpy : https://numpy.org/
+
 PyTorch : https://pytorch.org/
 
 torchvision : https://pypi.org/project/torchvision/
@@ -82,3 +84,24 @@ DataSet : You should download the cifar100 dataset : https://www.cs.toronto.edu/
     last epoch accuracy : 60.75
     
     best accuracy : 61.26
+    
+  my model : https://drive.google.com/drive/folders/1LYjmtvBkNjfSTB71pFc1WCU2XL1uKwCv?usp=sharing
+  
+# Usage
+
+* Read the data set 
+    1. download the data set from this link : https://www.cs.toronto.edu/~kriz/cifar.html
+    2. extract the data set file : https://stackoverflow.com/questions/48454111/how-to-extract-tar-files
+    3. download the data_loader.py, in data_loader file you will find 2 classes ( cifar100DataSet , cifar100TestSet )
+    5. in both of this classes you will find a variable called path, change it to match your data set path 
+
+* Train the model 
+    1. download the cifar100.py file
+    2. " if you want ", you can change some parametars
+    3. check that you have a GPU
+    4. and now just run this file :)
+
+* Test your model 
+    1. first run the cifar100.py file
+    2. you will find a file in the home directory called " model.pth "
+    3. 
