@@ -163,6 +163,7 @@ Loss = nn.CrossEntropyLoss()
 optimaizer = torch.optim.Adam(model.parameters(), lr =learning_rate)
 scheduler = torch.optim.lr_scheduler.StepLR(optimaizer, step_size=20, gamma=0.8)
 # train loop
+max = 50.
 for epoch in range(num_epochs):
     model.train()
     for x,y in train_dataloader:
@@ -190,6 +191,9 @@ for epoch in range(num_epochs):
             n_total += 1
             n_correct += (pred == label).item()
         acc = 100.0 * n_correct / n_total
+        if acc > max :
+            max = acc
+            torch.save(model.state_dict(), 'model.pth')
         print('accuracy = ',acc)
 
 
