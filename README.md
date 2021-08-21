@@ -79,6 +79,6 @@ DataSet : You should download the cifar100 dataset : https://www.cs.toronto.edu/
       6. fully connected layer ( 150 , 100 )
 
 # Accuracy 
-    last epoch accuracy : 59.5
+    last epoch accuracy : 60.75
     
-    best accuracy : 60.36
+    best accuracy : 61.26
