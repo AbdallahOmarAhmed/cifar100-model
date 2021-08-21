@@ -101,7 +101,10 @@ DataSet : You should download the cifar100 dataset : https://www.cs.toronto.edu/
     3. check that you have a GPU
     4. and now just run this file :)
 
-* Test your model 
+* Load your model 
     1. first run the cifar100.py file
     2. you will find a file in the home directory called " model.pth "
-    3. 
+    3. download the test_model.py file
+    4. change the path variable to match the model.pth path
+    5. choose how do you want to use this model
+
