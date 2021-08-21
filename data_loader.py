@@ -12,7 +12,7 @@ def unpickle(path):
     return dict
 
 class cifar100DataSet(Dataset):
-    path = '/home/abdallah/cifar-100-python/train'
+    path = 'your_file_path/cifar-100-python/train'
     def __init__(self):
         self.data = unpickle(cifar100DataSet.path)
         self.images=self.data[b'data'].reshape(-1, 3, 32, 32)
@@ -24,7 +24,7 @@ class cifar100DataSet(Dataset):
         return torch.from_numpy(self.images[index]).to(torch.float32)/255, torch.tensor(self.labels[index]).to(torch.long)
 
 class cifar100TestSet(Dataset):
-    path = '/home/abdallah/cifar-100-python/test'
+    path = 'your_file_path/cifar-100-python/test'
     def __init__(self):
         self.data = unpickle(cifar100TestSet.path)
         self.images=self.data[b'data'].reshape(-1, 3, 32, 32)
