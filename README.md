@@ -38,45 +38,45 @@ DataSet : You should download the cifar100 dataset : https://www.cs.toronto.edu/
       cross entropy loss
 
 * Model structure
-    
-      1. conv layer
+
+      1.conv layer ( input_channels = 3 , output_channels = 20 , kernal_size = 3)
       
       activation function (' ReLU ')
       
-      max pooling
+      max pooling ( kernal_size = 2 , stride = 2 )
       
-      batch norm
+      batch norm ( input_channels = 20 )
       
-      drop out
+      drop out ( probability = 0.25 )
 
 
-      2. conv layer
+      2. conv layer ( 20 , 50 , 4 )
 
       activation function (' ReLU ')
 
-      max pooling
+      max pooling ( 2 , 2 )
       
-      batch norm
+      batch norm ( 50 )
       
-      drop out
+      drop out ( 0.25 )
     
     
-      3. conv layer
+      3. conv layer ( 50 , 100 , 3 )
       
       activation function (' ReLU ')
       
-      max pooling
+      max pooling ( 2 , 2 )
       
-      batch norm
+      batch norm ( 100 )
       
-      drop out
+      drop out ( 0.25 )
       
       
-      4. fully connected layer
+      4. fully connected layer ( input_features = 400 , output_features = 200 )
     
-      5. fully connected layer
+      5. fully connected layer ( 200 , 150 )
     
-      6. fully connected layer
+      6. fully connected layer ( 150 , 100 )
 
 # Accuracy 
     last epoch accuracy : 59.5
